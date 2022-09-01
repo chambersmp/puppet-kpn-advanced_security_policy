@@ -85,7 +85,7 @@ Puppet::Type.type(:advanced_security_policy).provide(:lgpo) do
     else
       ensure_value = :present
       # policy_setting = (policy_values[:data_type] == 'boolean') ? policy_datatype_boolean(action, policy_values[:enabled_value]) : action.split(':')[1].downcase
-      policy_setting = (policy_values[:data_type] == 'boolean') ? policy_datatype_boolean(action, policy_values[:enabled_value]) : action.split(':')[1]
+      policy_setting = (policy_values[:data_type] == 'boolean') ? policy_datatype_boolean(action, policy_values[:enabled_value]) : action.split(':',2)[1]
     end
 
     [ensure_value, policy_setting]

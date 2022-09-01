@@ -27,6 +27,30 @@ class AdvancedSecurityPolicy
 
   def self.asp_mapping
     @asp_mapping ||= {
+      'Specify intranet Microsoft update service location' => {
+        name: 'Software\Policies\Microsoft\Windows\WindowsUpdate\WUServer',
+        configuration: 'Computer',
+        registry_key: 'Software\Policies\Microsoft\Windows\WindowsUpdate',
+        value_name: 'WUServer',
+        reg_type: 'SZ',
+        data_type: 'string',
+      },
+      'Specify intranet statistics server' => {
+        name: 'Software\Policies\Microsoft\Windows\WindowsUpdate\WUStatusServer',
+        configuration: 'Computer',
+        registry_key: 'Software\Policies\Microsoft\Windows\WindowsUpdate',
+        value_name: 'WUStatusServer',
+        reg_type: 'SZ',
+        data_type: 'string',
+      },
+      # 'Configure target Subscription Manager' => {
+      #   name: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager\1',
+      #   configuration: 'Computer',
+      #   registry_key: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager',
+      #   value_name: '1',
+      #   reg_type: 'SZ',
+      #   data_type: 'string',
+      # },
       'Prevent enabling lock screen camera' => {
         name: 'Software\Policies\Microsoft\Windows\Personalization\NoLockScreenCamera',
         configuration: 'Computer',
