@@ -43,14 +43,14 @@ class AdvancedSecurityPolicy
         reg_type: 'SZ',
         data_type: 'string',
       },
-      # 'Configure target Subscription Manager' => {
-      #   name: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager\1',
-      #   configuration: 'Computer',
-      #   registry_key: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager',
-      #   value_name: '1',
-      #   reg_type: 'SZ',
-      #   data_type: 'string',
-      # },
+      'Configure target Subscription Manager' => {
+        name: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager\1',
+        configuration: 'Computer',
+        registry_key: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager',
+        value_name: '1',
+        reg_type: 'SZ',
+        data_type: 'string',
+      },
       'Prevent enabling lock screen camera' => {
         name: 'Software\Policies\Microsoft\Windows\Personalization\NoLockScreenCamera',
         configuration: 'Computer',
