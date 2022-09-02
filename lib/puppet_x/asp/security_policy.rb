@@ -43,10 +43,10 @@ class AdvancedSecurityPolicy
         reg_type: 'SZ',
         data_type: 'string',
       },
-      'Configure target Subscription Manager' => {
-        name: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager\1',
+      'Configure target Subscription Manager 1' => {
+        name: 'Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager\1',
         configuration: 'Computer',
-        registry_key: '	Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager',
+        registry_key: 'Software\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager',
         value_name: '1',
         reg_type: 'SZ',
         data_type: 'string',
