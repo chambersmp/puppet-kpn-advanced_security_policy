@@ -9,8 +9,8 @@ REGISTRY_FILE_MACHINE = 'C:\\Windows\\System32\\GroupPolicy\\Machine\\Registry.p
 REGISTRY_FILE_USER = 'C:\\Windows\\System32\\GroupPolicy\\User\\Registry.pol'
 
 Puppet::Type.type(:advanced_security_policy).provide(:lgpo) do
-  confine    osfamily: :windows
-  defaultfor osfamily: :windows
+  confine    'os.family': :windows
+  defaultfor 'os.family': :windows
 
   commands securitypol: 'lgpo.exe'
 
